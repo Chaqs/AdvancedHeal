@@ -1,0 +1,10 @@
+name: AdvancedHeal
+main: Chaqs\AdvancedHeal\Main
+version: 1.0.0
+api: [3.0.0, 4.0.0]
+
+commands:
+
+  heal:
+
+    permission: command.advancedheal
