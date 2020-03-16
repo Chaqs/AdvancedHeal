@@ -38,14 +38,12 @@ class Main extends PluginBase implements Listener{
                     $maxhealth = $sender->getMaxHealth();
                     $sender->setHealth(20);
                     $currenthealth = $sender->getHealth();
-                    $colorcode = "6";
-                    $resetcolor = "r";
-                    $sender->sendMessage("§$colorcode You Have Been Healed! §$resetcolor \nResults: \n §cHealth-Changes:§e " . $beforehealth . "§7/§e" . $maxhealth . "§7 ->§e " . $currenthealth . "§7/§e" . $maxhealth);
+                    $sender->sendMessage("§6You Have Been Healed! §r \nResults: \n §cHealth-Changes:§e " . $beforehealth . "§7/§e" . $maxhealth . "§7 ->§e " . $currenthealth . "§7/§e" . $maxhealth);
                     $beforefood = $sender->getFood();
                     $maxfood = $sender->getMaxFood();
                     $sender->setFood(20);
                     $currentfood = $sender->getFood();
-                    $sender->sendMessage(" §cFood-Changes:§e " . $beforefood . "§7/§e" . $maxfood . "§7 ->§e " . $currentfood . "§7/§e" . $maxfood);
+                    $sender->sendMessage("§cFood-Changes:§e " . $beforefood . "§7/§e" . $maxfood . "§7 ->§e " . $currentfood . "§7/§e" . $maxfood);
                     
                 }else{
                     $sender->sendMessage("Invalid Permissions");
